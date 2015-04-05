@@ -1,0 +1,29 @@
+
+ul {
+  list-style-type: none;
+}
+ 
+h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+li img {
+  float: left;
+  height: 60px;
+  width: 60px;
+  margin: 15px 15px 15px 15px;
+}
+ 
+li p {
+  font: 200 18px/1.5, bold, serif;
+}
+ 
+li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+li:hover {
+  background: #eee;
+  cursor: pointer;
+}

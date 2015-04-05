@@ -1,0 +1,128 @@
+body {
+  font: 10px sans-serif;
+  background-color: #eee;
+}
+
+
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #FFFFFF;
+  color: #FFFFFF; 
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  fill: none;
+  stroke: #FFFFFF;
+}
+
+.x.axis line {
+  fill: none;
+  stroke: #FFFFFF; 
+  shape-rendering: crispEdges;
+}
+
+
+.line {
+  fill: none; 
+  stroke: red;
+  stroke-width: 1.5px;
+}
+
+.bar {
+  fill: orange;
+}
+
+.bar rect {
+  fill: steelblue;
+  shape-rendering: crispEdges;
+}
+
+.bar text {
+  fill: #fff;
+}
+
+.bar:hover {
+  fill: orangered ;
+}
+
+.line {
+  fill: none; 
+  stroke: red;
+  stroke-width: 1.5px;
+}
+
+
+
+
+#collageContainer{
+  position: absolute;
+  bottom: 0;
+  left: 0;	  
+  width: 35%;
+  height: 35%;	
+  z-index:5;
+
+}
+
+
+#statsDiv {
+  position: absolute;
+  top: 0;
+  left: 0;  
+  width:30%;
+  height:20%;    
+  z-index:3;
+  color:white;
+  font-size: 25px;
+}
+
+
+#ticker {
+  position: absolute;
+  top: 0;
+  right: 0;  
+  width:15%;
+  height:20%;    
+  z-index:7;
+  color:white;
+  font-size: 15px;
+}
+
+#singleCascadeGraph {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width:70%;
+  height:30% ;   
+  z-index:7;
+}
+
+
+#langHisto {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width:50%;
+  height:100% ;   
+  z-index:8;
+  font-size: 20px;
+
+}
+
+#graphDiv {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width:50%;
+  height:100% ;   
+  z-index:4;
+}
+
+
+#thumbimg {
+    max-height: 30px;
+    max-width: 30px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+
+
+</style>
+<head>
+
+	 <meta http-equiv="refresh" content="60000">        
+
+	<!-- External Resources-->
+	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="map/libs/jquery-1.10.1.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+	<script src="d3-cloud/d3.layout.cloud.js"></script>
+
+
+	
+	<!-- Bootstrap -->
+	<!--http://getbootstrap.com/2.3.2/-->
+	<script src="map/libs/bootstrap/js/bootstrap.js"></script>
+	<link href="map/libs/bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="map/libs/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  
+	<!-- Google Maps -->
+	<link href="https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=visualization"></script>
+
+
+	<!-- Generic server specific functions -->
+	<script src="map/js/FMEServer.js" type="text/javascript"></script>
+
+	<!-- Spatial Dashboard JavaScript -->
+	<script src="map/js/twitterStream.js" type="text/javascript"></script>
+  <script src="map/js/gmaps-heatmap.js" type="text/javascript"></script>
+
+  <!-- local javascript -->
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/histogram.js" type="text/javascript"></script>
+
+
+<!-- Generic -->
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" type="text/css" href="css/stats.css">
+  <link rel="stylesheet" href="map/css/index.css">
+  <link rel="stylesheet" href="map/css/pure.css">
+  <link rel="stylesheet" type="text/css" href="css/collage.css">
+  <link rel="stylesheet" type="text/css" href="css/ticker.css">
+
+</head>
+<body onload="main()">
+
+
+<div class="container"> 
+	<div id="map_canvas"></div>
+</div>
+
+
+<div id="singleCascadeGraph" >
+	<div id="graphDiv" class="a"></div>
+<!-- 		<div id="typeHisto"></div> -->
+<!-- 	<div id="commonLang">Most Freq. Lang: <span></span></div>
+ -->	<div id="langHisto"></div>
+</div>
+
+
+
+<div id="collageContainer" class="collage">	
+	
+</div>
+
+<!-- <div id="wordCloudDiv" class="b"></div>
+ -->
+<div id="ticker">
+			<ul id='loc'>
+			</ul>
+</div>
+
+<div id="statsDiv" ><span></span></div>
+
+
+
+
+
+
+</body>
+
+
