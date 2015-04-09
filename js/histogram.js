@@ -23,7 +23,7 @@ function drawHisto(){
         .orient("left")
         .tickFormat(formatPercent);
 
-    var svg = d3.select("#langHisto").append("svg")
+    var svg = d3.select("#kmlHistoDiv").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
       .append("g")
@@ -76,7 +76,7 @@ function drawHisto(){
 
 function updateHistoData(langDist){
     // Generate a log-normal distribution with a median of 30 minutes
-    var myNode = document.getElementById("langHisto");
+    var myNode = document.getElementById("kmlHistoDiv");
     while (myNode.firstChild) {
          myNode.removeChild(myNode.firstChild);
     }
@@ -102,7 +102,7 @@ var margin = {top: 40, right: 50, bottom: 30, left: 80},
         .orient("left");
        // .tickFormat(formatPercent);
 
-    var svg = d3.select("#langHisto").append("svg")
+    var svg = d3.select("#kmlHistoDiv").append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
       .append("g")

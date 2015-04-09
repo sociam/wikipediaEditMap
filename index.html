@@ -29,20 +29,29 @@
 	<link href="https://google-developers.appspot.com/maps/documentation/javascript/examples/default.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=visualization"></script>
 
-
+ <!-- local javascript -->
+    <script src="js/index.js" type="text/javascript"></script>
+    <script src="js/histogram.js" type="text/javascript"></script>
+    
 	<!-- Generic server specific functions -->
 	<script src="map/js/FMEServer.js" type="text/javascript"></script>
 
 	<!-- Spatial Dashboard JavaScript -->
-	<script src="map/js/twitterStream.js" type="text/javascript"></script>
-  <script src="map/js/gmaps-heatmap.js" type="text/javascript"></script>
+	<script src="map/js/mapIndex.js" type="text/javascript"></script>
+  	<script src="map/js/gmaps-heatmap.js" type="text/javascript"></script>
+     <script type="text/javascript" src="http://geoxml3.googlecode.com/svn/branches/polys/geoxml3.js">
+        </script>
+        <script type="text/javascript" src="http://geoxml3.googlecode.com/svn/trunk/ProjectedOverlay.js">
+        </script>
+ 	 <script src="map/js/v3_epoly.js" type="text/javascript"></script>
+<!-- 
+ 	<script src="map/js/ProjectedOverlay.js" type="text/javascript"></script>
+ -->
 
-  <!-- local javascript -->
-    <script src="js/index.js" type="text/javascript"></script>
-    <script src="js/histogram.js" type="text/javascript"></script>
 
 
 <!-- Generic -->
+  <link rel="stylesheet" type="text/css" href="map/css/gmap.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
   <link rel="stylesheet" type="text/css" href="css/stats.css">
   <link rel="stylesheet" href="map/css/index.css">
@@ -59,27 +68,40 @@
 </div>
 
 
-<div id="singleCascadeGraph" >
+<!-- <div id="singleCascadeGraph" >
 	<div id="graphDiv" class="a"></div>
-<!-- 		<div id="typeHisto"></div> -->
-<!-- 	<div id="commonLang">Most Freq. Lang: <span></span></div>
- -->	<div id="langHisto"></div>
+	<div id="langHisto"></div>
 </div>
 
-
-
+ -->
+<!-- 
 <div id="collageContainer" class="collage">	
 	
 </div>
-
+ -->
 <!-- <div id="wordCloudDiv" class="b"></div>
  -->
-<div id="ticker">
+<!-- <div id="ticker">
 			<ul id='loc'>
 			</ul>
-</div>
+</div> -->
+ 
 
-<div id="statsDiv" ><span></span></div>
+<div id="statsDiv" >
+
+
+	
+	<div id="optionsDiv">
+		<h3><center>Observatory: Hampshire Police</center></h3>
+
+	</div>
+
+
+	<div id="kmlHistoDiv">
+		<span></span></div>
+
+
+</div>
 
 
 
